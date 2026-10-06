@@ -1,6 +1,9 @@
 <template>
-  <div></div>
+  <div class="p-10 bg-blue-500 text-white font-bold text-3xl rounded-xl m-5 text-center">
+    Se ficar azul com texto grande, funcionou!
+  </div>
 </template>
+
 
 <script>
 
@@ -10,12 +13,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
