@@ -1,14 +1,21 @@
 <template>
-  <div class="p-10 bg-blue-500 text-white font-bold text-3xl rounded-xl m-5 text-center">
-    Se ficar azul com texto grande, funcionou!
+  <div class="">
+    {{ nome }}
   </div>
 </template>
 
 
 <script>
 
+import { ref } from 'vue';
+
 export default {
   name: 'App',
+  data () {
+    return {
+      nome: ref('oi')
+    }
+  }
 }
 </script>
 
