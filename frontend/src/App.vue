@@ -1,20 +1,18 @@
 <template>
-  <div class="">
-    {{ nome }}
+  <div>
+    <DashboardView />
   </div>
 </template>
 
 
 <script>
+import DashboardView from './views/DashboardView.vue';
 
-import { ref } from 'vue';
 
 export default {
   name: 'App',
-  data () {
-    return {
-      nome: ref('oi')
-    }
+  components: {
+    DashboardView
   }
 }
 </script>
