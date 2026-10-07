@@ -4,8 +4,8 @@ import ProdutoFormView from '../views/produtos/ProdutoFormView.vue'
 
 const routes = [
     {
-        path: '/produtos/novo',
-        name: 'produtos.create',
+        path: '/produto/novo',
+        name: 'ProdutoFormView',
         component: ProdutoFormView
     },
     {

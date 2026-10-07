@@ -51,7 +51,7 @@
                 </div>
                 
             </div>
-            <AppButton to="/test" />
+            <AppButton to="/produto/novo" />
         </div>
 
         <div v-else>
