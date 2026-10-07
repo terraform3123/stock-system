@@ -8,7 +8,6 @@
         </div>
 
         <form class="p-6 space-y-6">
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <div class="md:col-span-2">
@@ -52,22 +51,39 @@
             </div>
 
             <div class="flex items-center justify-end space-x-4 border-t border-gray-100 pt-6 mt-6">
-                <button type="button"
-                    class="px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium transition-colors">
-                    Cancelar
-                </button>
+                <AppButton type="button" to="/" text="Cancelar"
+                    class="cancel-btn transition-colors focus:ring-red-500">
+                </AppButton>
 
                 <button type="submit"
-                    class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium shadow-sm transition-colors">
+                    class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium shadow-sm transition-colors focus:ring-emerald-500">
                     Registar Produto
                 </button>
             </div>
 
         </form>
     </div>
-
 </template>
 
-<script></script>
+<script>
+import AppButton from './AppButton.vue';
 
-<style></style>
+    export default {
+        data() {
+        },
+        
+        components: {
+            AppButton
+        }
+    }
+</script>
+
+<style>
+.cancel-btn {
+    background-color: #ff4545;
+}
+
+.cancel-btn:hover {
+    background-color: #ff2b2b;
+}
+</style>

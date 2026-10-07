@@ -51,7 +51,7 @@
                 </div>
                 
             </div>
-            <AppButton to="/produto/novo" />
+            <AppButton text="Cadastrar Produto" to="/produto/novo" />
         </div>
 
         <div v-else>
@@ -67,6 +67,7 @@ import AppButton from '@/components/AppButton.vue';
 import { ref } from 'vue';
 
 export default {
+    name: 'ListProductView',
     data() {
         return {
             dados: null,
@@ -105,7 +106,6 @@ export default {
 
     async mounted() {
         this.dados = await this.fetchData()
-        console.log(process.env.API_URL)
     }
 }
 </script>

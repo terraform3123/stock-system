@@ -1,16 +1,17 @@
-import DashboardView from '@/views/DashboardView.vue'
+import ListProductView from '@/views/produtos/ListProductView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import ProdutoFormView from '../views/produtos/ProdutoFormView.vue'
+import AddProductView from '../views/produtos/AddProductView.vue'
 
 const routes = [
     {
         path: '/produto/novo',
-        name: 'ProdutoFormView',
-        component: ProdutoFormView
+        name: 'AddProductView',
+        component: AddProductView
     },
     {
         path: '/',
-        component: DashboardView
+        name: 'ListProductView',
+        component: ListProductView
     }
 ]
 
